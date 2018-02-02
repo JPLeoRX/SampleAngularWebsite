@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Leo Ertuna">
+  <meta name="description" content="Sample AngularJS website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>My AngularJS App</title>
+
+  <!-- Add Styles -->
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+
+  <!-- Add JavaScript -->
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+</head>
+
+
+
+<body>
+  <header>
+    <div>
+      <!-- Logo -->
+      <a><img src=""></a>
+      
+      <!-- Navigation Menu -->
+      <nav>
+        <ul>
+          <li><a id="projectsNavBtn"  href="#!/projects"  >Our Projects</a></li>
+          <li><a id="privacyNavBtn"   href="#!/privacy"   >Privacy & Terms</a></li>
+          <li><a id="aboutNavBtn"     href="#!/about"     >About</a></li>
+          <li><a id="contactNavBtn"   href="#!/contact"   >Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Component -->
+  <div ng-view></div>
+
+  <!-- Add JavaScript -->
+  <script src="view_about/view_about.js"></script>
+  <script src="view_privacy/view_privacy.js"></script>
+  <script src="view_contact/view_contact.js"></script>
+
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
